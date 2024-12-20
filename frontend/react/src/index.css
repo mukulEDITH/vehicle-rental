@@ -1,0 +1,182 @@
+/* Reset some default styles for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* System font */
+  background-color: #f1f7f9; /* Light pearl white background */
+  color: #333; /* Dark text color for contrast */
+  text-align: center; /* Center align all text globally */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: color 9s infinite linear;
+}
+@keyframes color {
+  0%   { background: #a7e9e9; }
+  20%  { background: #9dc0dd; }
+  40%  { background: #e1e9b1; }
+  60%  { background: #bfbadd; }
+  80%  { background: #d8a2a7; }
+  100% { background: #b4dfdf; }
+}
+
+
+.thankyou{
+  width: 20%;
+  height: 10%;
+}
+input{
+  width: 50%;
+}
+
+.step-image {
+  width: 60%;   
+  height: 200px;   
+     
+}
+ 
+.step-image:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+ 
+
+.box{
+  gap: 20px;
+  display: grid;
+}
+
+/* Style for heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003366; /* Dark blue */
+  margin-bottom: 1rem;
+}
+
+/* Style for paragraphs and text */
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #555; /* Slightly lighter text */
+  margin-bottom: 1rem;
+}
+
+/* Buttons with blue background */
+button {
+  background-color: #1e3a8a; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #334c9c; /* Slightly lighter blue on hover */
+}
+
+/* Input and select boxes styling */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Focused state for input and select fields */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1e3a8a; /* Blue border on focus */
+  outline: none;
+}
+
+/* Radio buttons and labels */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003366; /* Dark blue text for labels */
+  margin-right: 20px;
+}
+
+/* Container for forms */
+.form-container {
+  background-color: #ffffff; /* White background for form */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Date range picker */
+input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Add some spacing around the form */
+.form-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page container */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f7f9; /* Light pearl white */
+  padding: 20px;
+}
+
+/* Loading screen or empty state */
+.loading-container {
+  font-size: 20px;
+  color: #003366;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* For error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
